@@ -1,0 +1,30 @@
+:root {
+  /* video width & height */
+  --width: 640px;
+  --height: 360px;
+}
+
+/*video*/
+#video {
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+.player {
+  position: relative;
+  left: clamp(0px, 50% - calc(var(--width) / 2), 9999px);
+  width: min(100%, var(--width));
+  padding-bottom: min(56.25%, var(--height));
+}
+.player iframe {
+  position: absolute;
+  width: min(100%, var(--width));
+  height: min(100%, var(--height));
+}
+
+@media screen and (min-width: 768px) {
+  /* video */
+  #video {
+    position: static;
+  }
+}
