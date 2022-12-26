@@ -1,0 +1,11 @@
+main img {
+  width: min(100%, 360px);
+  max-height: calc(360px * 0.926);
+}
+
+@media screen and (min-width: 768px) {
+  /* main */
+  main section {
+    display: flex;
+  }
+}

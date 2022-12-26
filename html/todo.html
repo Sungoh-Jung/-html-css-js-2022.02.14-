@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>base frame - ver 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/todo.css"
+    />
+    <script src="../js/main.js" defer></script>
+    <script src="../js/clock.js" defer></script>
+    <script src="../js/todo.js" defer></script>
+    <script src="../js/quotes.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ef09577826.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!--logo-->
+      <div class="logo-container">
+        <i class="fa-brands fa-html5 logo-image"></i>
+        <a class="logo-title" href="./main.html">my header title</a>
+      </div>
+      <!-- nav -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./img.html">image</a></li>
+          <li><a href="./video.html">video</a></li>
+          <li>
+            <a href="./todo.html" style="color: var(--red)">to do list</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- nav-toggle-btn -->
+      <i class="fa-solid fa-bars nav-toggle-btn"></i>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- todo-section -->
+      <section class="todo-section">
+        <!-- title-clock -->
+        <div class="title-clock">
+          <h2>section title</h2>
+          <span id="clock">00:00:00</span>
+        </div>
+        <!-- todo form and list -->
+        <form id="todo-form">
+          <input type="text" required placeholder="Write a To Do" />
+        </form>
+        <ul id="todo-lists"></ul>
+      </section>
+      <!-- quote-section -->
+      <section class="quote-section">
+        <q>quote</q>
+        <span>author</span>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <span>creater: me</span>
+      <span>first-created: 2022.02.14</span>
+    </footer>
+  </body>
+</html>

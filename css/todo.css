@@ -1,0 +1,54 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+.todo-section {
+  flex-grow: 1;
+}
+#todo-form,
+#todo-lists {
+  text-align: center;
+}
+
+/* todo-form */
+#todo-form input {
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+
+  background-color: var(--gray);
+}
+
+/* todo-lists */
+#todo-lists {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#todo-lists li {
+  margin: 4px 0;
+  border: 1px solid black;
+  border-radius: 15px;
+
+  transition: border-color 0.3s;
+  cursor: pointer;
+}
+
+#todo-lists li:hover {
+  color: gray;
+  text-decoration: line-through;
+  border-color: var(--white);
+}
+
+/* quote-section */
+.quote-section {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+  #todo-lists {
+    width: 50%;
+  }
+}

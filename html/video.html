@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>base frame - ver 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/video.css"
+    />
+    <script src="../js/main.js" defer></script>
+    <script src="../js/clock.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ef09577826.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!--logo-->
+      <div class="logo-container">
+        <i class="fa-brands fa-html5 logo-image"></i>
+        <a class="logo-title" href="./main.html">my header title</a>
+      </div>
+      <!-- nav -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./img.html">image</a></li>
+          <li><a href="./video.html" style="color: var(--red)">video</a></li>
+          <li><a href="./todo.html">to do list</a></li>
+        </ul>
+      </nav>
+      <!-- nav-toggle-btn -->
+      <i class="fa-solid fa-bars nav-toggle-btn"></i>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="title-clock">
+        <h2>section title</h2>
+        <span id="clock">00:00:00</span>
+      </div>
+      <section id="video">
+        <div class="area">
+          <div class="player">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zGrTT4k1-yc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="paragraph">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias,
+          sequi voluptate. Assumenda fugit, cupiditate neque necessitatibus,
+          earum cumque officiis quos commodi, asperiores obcaecati voluptatibus
+          quisquam autem deserunt nisi ipsa accusantium! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Temporibus animi mollitia, ratione
+          iste accusamus exercitationem, tenetur rerum iusto, tempore quisquam
+          recusandae ad maiores est quasi expedita incidunt blanditiis nulla
+          odit. Libero iure ullam culpa architecto fuga? Eos perferendis
+          explicabo at rerum beatae dolorem officiis corporis incidunt
+          perspiciatis voluptatum iure harum debitis assumenda, delectus
+          molestiae eaque magni, veritatis laboriosam dolore expedita. Et
+          laboriosam asperiores at delectus odit, quidem ad maxime saepe eaque
+          numquam. Ut est sapiente, voluptatum maiores debitis cupiditate qui
+          atque aspernatur molestias facilis repudiandae corporis cum
+          necessitatibus in quasi?
+        </p>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <span>creater: me</span>
+      <span>first-created: 2022.02.14</span>
+    </footer>
+  </body>
+</html>
